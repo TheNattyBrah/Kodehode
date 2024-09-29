@@ -1,4 +1,4 @@
-// Dom Elements
+// Doc Elements
 const darkButton = document.getElementById(`dark`);
 const lightButton = document.getElementById(`light`);
 const solarButton = document.getElementById(`solar`);
@@ -19,11 +19,13 @@ darkButton.onclick = () => {
     body.classList.replace(`light`, `dark`);
     localStorage.setItem(`theme`, `dark`);
 };
+
 // Light Theme
 lightButton.onclick = () => {
     body.classList.replace(`dark`, `light`);
     localStorage.setItem(`theme`, `light`);
 };
+
 // Solar Theme
 solarButton.onclick = () => {
     if (body.classList.contains(`solar`)) {
